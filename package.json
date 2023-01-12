@@ -2,7 +2,40 @@
   "name": "compoaktion",
   "private": true,
   "version": "0.0.0",
+  "description": "A library to use for coaktion projects!",
   "type": "module",
+  "homepage": "https://compoaktion-docs.netlify.app/",
+  "author": "Leandro Pedroso <leandroppf@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/leandroppf/compoaktion/issues"
+  },
+  "repository": {
+    "type": "github",
+    "url": "git+https://github.com/leandroppf/compoaktion.git",
+    "directory": "packages/compoaktion"
+  },
+  "keywords": [
+    "coaktion",
+    "ui",
+    "compoaktion",
+    "vite",
+    "tailwind",
+    "components",
+    "components library",
+    "design system"
+  ],
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/compoaktion.umd.js",
+  "module": "./dist/compoaktion.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/compoaktion.es.js",
+      "require": "./dist/compoaktion.umd.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
